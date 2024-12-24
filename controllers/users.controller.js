@@ -54,7 +54,7 @@ const usersController = {
                 [userCode, name, email, hashedPassword]
             );
     
-            res.status(200).json({ message: "User registered successfully", userCode });
+            res.status(200).json({data: [], message: "User registered successfully", userCode });
         } catch (error) {
             console.log("Signup error:", error);
             res.status(500).json({ message: "Internal server error" });
